@@ -443,7 +443,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 10px 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   min-height: 80px;
   border-bottom: 1px solid #ecf4f8; }
 
@@ -519,8 +520,8 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
-  padding: 13px 50px;
-  padding-right: 0; }
+  padding-top: 13px;
+  padding-bottom: 13px; }
 
 .head-info__slogan {
   min-width: 350px;
@@ -602,36 +603,15 @@ body {
 .user-inventory__goods::before {
   background-image: url("../images/shopping-basket.svg"); }
 
-.main-nav__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.main-nav__list-item {
-  margin-right: 35px; }
-
-.main-nav__list-item:last-child {
-  margin-right: 0; }
-
-.main-nav__link {
-  font-size: 14px;
-  color: #fff;
-  text-decoration: none; }
-
-.main-nav__link:hover,
-.main-nav__link:active,
-.main-nav__link--selected {
-  color: #1bc1cb; }
-
-.main-menu__inner {
+.main-menu {
+  background-color: #e97e14;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  min-height: 55px;
-  background-color: #e97e14; }
+  min-height: 55px; }
+
+.main-header__menu-toggle {
+  display: none; }
 
 .main-menu__search-form {
   position: relative;
@@ -654,28 +634,125 @@ body {
   padding-left: 15px;
   padding-right: 185px;
   max-width: 280px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  outline: none; }
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  max-width: 750px;
+  list-style: none; }
+
+.main-nav__link {
+  display: block;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none; }
+
+.main-nav__link:hover,
+.main-nav__link:active,
+.main-nav__link--selected {
+  background-color: #8b4b0c; }
+
+.main-content {
+  min-height: 600px; }
 
 .modal-feedback {
-  max-width: 440px; }
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -220px;
+  max-width: 440px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); }
 
 .modal-feedback__form {
+  position: relative;
   display: flex;
   flex-direction: column;
+  vertical-align: middle;
   padding-top: 95px;
   padding-bottom: 45px;
   padding-left: 60px;
   padding-right: 60px; }
 
-.modal-feedback__header,
-.modal-feedback__intro-text,
-.modal-feedback__user-info-text {
-  margin: 0; }
+.modal-feedback__form::before {
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  content: "";
+  margin-left: -27px;
+  width: 55px;
+  height: 55px;
+  background-image: url("../images/phone-in-circle.svg");
+  background-size: 55px 55px; }
+
+.cross {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 16px;
+  height: 16px;
+  opacity: .7; }
+
+.cross:hover {
+  opacity: 1;
+  cursor: pointer; }
+
+.cross::before,
+.cross::after {
+  position: absolute;
+  left: 7px;
+  content: ' ';
+  height: 16px;
+  width: 3px;
+  background-color: #e97e14;
+  border-radius: 6px; }
+
+.cross::before {
+  transform: rotate(45deg); }
+
+.cross::after {
+  transform: rotate(-45deg); }
+
+.modal-feedback__header {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center; }
+
+.modal-feedback__intro-text {
+  margin-bottom: 20px;
+  text-align: center; }
+
+.modal-feedback__name-input,
+.modal-feedback__tele-input {
+  margin-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #373737;
+  outline: none; }
+
+.modal-feedback__tele-input {
+  margin-bottom: 20px; }
 
 .modal-feedback__user-agreement-wrap {
-  display: flex; }
+  display: flex;
+  margin-bottom: 20px; }
 
 .modal-feedback__checkbox-wrap {
-  display: flex; }
+  position: relative;
+  margin-left: -15px;
+  min-width: 40px;
+  min-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,20 +2,19 @@
 
 .main-nav__list {
   display: flex;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
+  max-width: 750px;
   list-style: none;
 }
 
-.main-nav__list-item {
-  margin-right: 35px;
-}
-
-.main-nav__list-item:last-child {
-  margin-right: 0;
-}
-
 .main-nav__link {
+  display: block;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
   font-size: 14px;
   color: $white;
   text-decoration: none;
@@ -24,5 +23,5 @@
 .main-nav__link:hover,
 .main-nav__link:active,
 .main-nav__link--selected {
-  color: $blue;
+  background-color: darken($orange, 20%);
 }

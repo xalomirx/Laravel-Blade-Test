@@ -37,5 +37,8 @@ body {
 }
 
 //import blocks
-@import "main-header/main-header";
-@import "modal-feedback/modal-feedback";
+@import "top-content/main-header/main-header";
+@import "top-content/main-menu/main-menu";
+@import "top-content/main-menu/main-nav";
+@import "main-content/main-content";
+@import "modal-windows/modal-feedback/modal-feedback";

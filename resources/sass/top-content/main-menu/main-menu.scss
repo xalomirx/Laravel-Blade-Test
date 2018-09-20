@@ -1,14 +1,13 @@
-//main-nav import
-@import "main-nav";
-
-.main-menu__inner {
+.main-menu {
+  background-color: $orange;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
   min-height: 55px;
-  background-color: $orange;
+}
+
+.main-header__menu-toggle {
+  display: none;
 }
 
 //main-menu__search-form
@@ -37,4 +36,5 @@
   padding-right: 185px;
   max-width: 280px;
   border-radius: 8px;
+  outline: none;
 }

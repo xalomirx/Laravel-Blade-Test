@@ -1,0 +1,112 @@
+//modal-feedback
+.modal-feedback {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-left: -220px;
+  max-width: 440px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+}
+
+.modal-feedback__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  padding-top: 95px;
+  padding-bottom: 45px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.modal-feedback__form::before {
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  content: "";
+  margin-left: -27px;
+  width: 55px;
+  height: 55px;
+  background-image: url("../images/phone-in-circle.svg");
+  background-size: 55px 55px;
+}
+
+.cross {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 16px;
+  height: 16px;
+  opacity: .7;
+}
+
+.cross:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cross::before,
+.cross::after {
+  position: absolute;
+  left: 7px;
+  content: ' ';
+  height: 16px;
+  width: 3px;
+  background-color: $orange;
+  border-radius: 6px;
+}
+
+.cross::before {
+  transform: rotate(45deg);
+}
+.cross::after {
+  transform: rotate(-45deg);
+}
+
+.modal-feedback__header {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.modal-feedback__intro-text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-feedback__name-input,
+.modal-feedback__tele-input {
+  margin-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid $gray;
+  outline: none;
+}
+
+.modal-feedback__tele-input {
+  margin-bottom: 20px;
+}
+
+.modal-feedback__user-agreement-wrap {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.modal-feedback__checkbox-wrap {
+  position: relative;
+  margin-left: -15px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.btn {
+
+}
+
+
+

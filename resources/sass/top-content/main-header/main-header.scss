@@ -1,10 +1,13 @@
+//main-header
+
 //head-info__top-wrap
 
 .head-info__top-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 10px 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   min-height: 80px;
   border-bottom: 1px solid #ecf4f8;
 }
@@ -113,8 +116,8 @@
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
-  padding: 13px 50px;
-  padding-right: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 //head-info__slogan
@@ -208,3 +211,16 @@
 .user-inventory__goods::before {
   background-image: url("../images/shopping-basket.svg");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
