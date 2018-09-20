@@ -1,0 +1,14 @@
+{
+  "name": "Code_Example",
+  "private": true,
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^4.0.0"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

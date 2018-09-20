@@ -1,0 +1,27 @@
+//modal-feedback
+.modal-feedback {
+  max-width: 440px;
+}
+
+.modal-feedback__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 95px;
+  padding-bottom: 45px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.modal-feedback__header,
+.modal-feedback__intro-text,
+.modal-feedback__user-info-text {
+  margin: 0;
+}
+
+.modal-feedback__user-agreement-wrap {
+  display: flex;
+}
+
+.modal-feedback__checkbox-wrap {
+  display: flex;
+}

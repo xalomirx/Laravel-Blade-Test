@@ -1,0 +1,28 @@
+//main-nav
+
+.main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__list-item {
+  margin-right: 35px;
+}
+
+.main-nav__list-item:last-child {
+  margin-right: 0;
+}
+
+.main-nav__link {
+  font-size: 14px;
+  color: $white;
+  text-decoration: none;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active,
+.main-nav__link--selected {
+  color: $blue;
+}

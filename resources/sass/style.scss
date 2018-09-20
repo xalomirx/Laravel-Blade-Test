@@ -1,0 +1,41 @@
+//Google Fonts
+
+
+//import normalize.scss file
+
+
+
+//Constants
+@import "const";
+
+//import normalize.scss files
+@import "normalize/normalize";
+
+//overall properties
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: $body-fz;
+  line-height: $body-lh;
+}
+
+.container {
+  width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//import blocks
+@import "main-header/main-header";
+@import "modal-feedback/modal-feedback";
