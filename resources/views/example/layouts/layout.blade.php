@@ -79,7 +79,7 @@
                 <li class="main-nav__list-item">
                   <a class="main-nav__link" href="#">{{ $MainNavMenuItem [$i] }}</a>
                 </li>
-                @endfor
+              @endfor
             </ul>
           </nav>
           <form class="main-menu__search-form" action="#">
