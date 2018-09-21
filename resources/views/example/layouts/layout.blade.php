@@ -15,7 +15,7 @@
           <div class="head-info__logo-wrap">
             <a class="head-info__logo-link" href="#">
               <img class="head-info__logo" src="../images/logo.jpg" alt="Asplomb-Logo">
-                <img class="head-info__logo-sm--hidden" src="../images/logo-sm.jpg" alt="Asplomb-Logo">
+              <img class="head-info__logo-sm--hidden" src="../images/logo-sm.jpg" alt="Asplomb-Logo">
             </a>
           </div>
           <section class="head-contact">
