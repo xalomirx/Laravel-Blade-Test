@@ -1,4 +1,5 @@
-.main-menu {
+.main-menu__wrap {
+  position: relative;
   background-color: $orange;
   display: flex;
   justify-content: space-between;
@@ -43,4 +44,29 @@
   .main-menu__search-control {
     padding-right: 145px;
   }
+}
+
+@media (max-width: 992px) {
+
+  .main-menu__wrap {
+    justify-content: flex-end;
+  }
+
+  .main-menu__search-form {
+    margin-right: 2%;
+  }
+
+  //.main-menu__wrap {
+  //  flex-direction: column;
+  //  justify-content: flex-start;
+  //  align-items: center;
+  //  pt10
+  //  min-height: 55px;
+  //}
+  //
+  //.main-menu__search-form {
+  //  flex-grow: 1;
+  //  order: 1;
+  //}
+
 }

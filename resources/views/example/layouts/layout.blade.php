@@ -15,7 +15,7 @@
           <div class="head-info__logo-wrap">
             <a class="head-info__logo-link" href="#">
               <img class="head-info__logo" src="../images/logo.jpg" alt="Asplomb-Logo">
-              <img class="head-info__logo-sm--hidden" src="../images/logo-sm.jpg" alt="Asplomb-Logo">
+              <img class="head-info__logo-sm" src="../images/logo-sm.jpg" alt="Asplomb-Logo">
             </a>
           </div>
           <section class="head-contact">
@@ -56,7 +56,7 @@
               <a class="head-info__office-list-link" href="#">Найти офис вашего региона</a>
             </div>
             <section class="user-inventory">
-              <ul class="user-inventory-list">
+              <ul class="user-inventory__list">
                 <a class="user-inventory__favorite-link" href="#">
                   <span class="user-inventory__favorite">Избранное({{$UserInventoryData['FavoriteCount']}})</span>
                 </a>
@@ -70,21 +70,23 @@
     </header>
     @show
 
-    @section('main-menu')
+        @section('main-menu')
         <section class="main-menu container">
-          <a href="" class="main-header__menu-toggle"></a>
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              @for($i = 0; $i < count($MainNavMenuItem); $i++)
-                <li class="main-nav__list-item">
-                  <a class="main-nav__link" href="#">{{ $MainNavMenuItem [$i] }}</a>
-                </li>
-              @endfor
-            </ul>
-          </nav>
-          <form class="main-menu__search-form" action="#">
-            <input class="main-menu__search-control" type="text" placeholder="Поиск по сайту" name="search-query">
-          </form>
+          <div class="main-menu__wrap">
+            <a href="" class="main-header__menu-toggle"></a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                @for($i = 0; $i < count($MainNavMenuItem); $i++)
+                  <li class="main-nav__list-item">
+                    <a class="main-nav__link" href="#">{{ $MainNavMenuItem [$i] }}</a>
+                  </li>
+                @endfor
+              </ul>
+            </nav>
+            <form class="main-menu__search-form" action="#">
+              <input class="main-menu__search-control" type="text" placeholder="Поиск по сайту" name="search-query">
+            </form>
+          </div>
         </section>
         @show
 

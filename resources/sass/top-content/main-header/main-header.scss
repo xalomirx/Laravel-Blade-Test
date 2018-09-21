@@ -12,10 +12,16 @@
   border-bottom: 1px solid #ecf4f8;
 }
 
+@media (max-width: 992px) {
+  .head-info__top-wrap {
+    padding-top: 10px;
+  }
+}
+
 //head-info__logo
 
 .head-info__logo-wrap {
-  max-width: 325px;
+  margin-right: 10px;
 }
 
 .head-info__logo-link {
@@ -28,7 +34,7 @@
   height: 35px;
 }
 
-.head-info__logo-sm--hidden {
+.head-info__logo-sm {
   display: none;
 }
 
@@ -39,15 +45,39 @@
   }
 }
 
+@media (max-width: 992px) {
+
+  .head-info__logo {
+    display: none;
+  }
+
+  .head-info__logo-sm {
+    display: block;
+    width: 180px;
+    height: 50px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .head-info__logo-sm {
+    display: block;
+    width: 100px;
+    height: 50px;
+  }
+}
+
 //head-contact
 
 .head-contact {
-  min-width: 40%;
+  flex-grow: 1;
 }
 
 .head-contact__list {
   display: flex;
   justify-content: start;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -68,33 +98,33 @@
 
 @media (max-width: 1200px) {
 
-  .head-contact {
-    max-width: 40%;
-  }
-
   .head-contact__list-item {
     margin-right: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .head-contact__list-item {
+    margin-right: 5%;
   }
 }
 
 //user-box
 
 .user-menu {
-  display: flex;
-  justify-content: flex-end;
-  min-width: 23%;
+  max-width: 23%;
 }
 
 .user-menu__list {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   padding: 0;
   width: 100%;
   list-style: none;
 }
-
-//user-menu__avatar
 
 .user-menu__list-item:first-child {
   margin-right: 7%;
@@ -118,8 +148,6 @@
     opacity: 1;
   }
 }
-
-//user-menu__login-name/exit
 
 .user-menu__greetings,
 .user-menu__name,
@@ -149,7 +177,7 @@
 //head-info__slogan
 
 .head-info__slogan {
-  min-width: 350px;
+  max-width: 25%;
   font-size: 14px;
   font-weight: normal;
   color: $gray;
@@ -159,7 +187,7 @@
   margin-left: auto;
   margin-right: 17px;
   padding-right: 17px;
-  min-width: 260px;
+  max-width: 27%;
   text-align: right;
   border-right: 1px solid #ecf4f8;
 }
@@ -177,10 +205,10 @@
 //user-inventory
 
 .user-inventory {
-  min-width: 270px;
+  max-width: 34%;
 }
 
-.user-inventory-list {
+.user-inventory__list {
   display: flex;
   justify-content: flex-start;
   margin: 0;
@@ -236,6 +264,17 @@
 
 .user-inventory__goods::before {
   background-image: url("../images/shopping-basket.svg");
+}
+
+@media (max-width: 768px) {
+
+  .user-inventory__list {
+    flex-direction: column;
+  }
+
+  .user-inventory__favorite-link {
+    margin-bottom: 5px;
+  }
 }
 
 
