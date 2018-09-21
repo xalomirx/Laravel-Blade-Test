@@ -6,6 +6,8 @@
 /.idea
 /.vscode
 /.vagrant
+/.sass-cache
+gruntfile.js
 Homestead.json
 Homestead.yaml
 npm-debug.log

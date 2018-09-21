@@ -33,8 +33,14 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 15px;
-  padding-right: 185px;
-  max-width: 280px;
+  padding-right: 160px;
   border-radius: 8px;
   outline: none;
+}
+
+@media (max-width: 1200px) {
+
+  .main-menu__search-control {
+    padding-right: 145px;
+  }
 }

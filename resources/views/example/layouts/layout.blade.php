@@ -15,6 +15,7 @@
           <div class="head-info__logo-wrap">
             <a class="head-info__logo-link" href="#">
               <img class="head-info__logo" src="../images/logo.jpg" alt="Asplomb-Logo">
+                <img class="head-info__logo-sm--hidden" src="../images/logo-sm.jpg" alt="Asplomb-Logo">
             </a>
           </div>
           <section class="head-contact">
@@ -81,7 +82,6 @@
                 @endfor
             </ul>
           </nav>
-
           <form class="main-menu__search-form" action="#">
             <input class="main-menu__search-control" type="text" placeholder="Поиск по сайту" name="search-query">
           </form>
@@ -95,24 +95,27 @@
 
         @section('modal-feedback')
         <section class="modal-feedback">
-          <form class="modal-feedback__form" action="">
-            <span class="cross"></span>
-            <h2 class="modal-feedback__header">Обратный звонок</h2>
-            <p class="modal-feedback__intro-text">Отправьте свое имя и телефон и наш сотрудник перезвонит вам в течении рабочего дня</p>
-            <input class="modal-feedback__name-input" type="text" placeholder="Ваше имя" name="name">
-            <input class="modal-feedback__tele-input" type="text" placeholder="Ваш телефон" name="phone-number">
-            <div class="modal-feedback__user-agreement-wrap">
-              <div class="modal-feedback__checkbox-wrap">
-                <input class="modal-feedback__checkbox" type="checkbox" id="personal-data-check">
-                <input class="modal-feedback__checkbox" type="checkbox" id="site-politics-agree">
-              </div>
-              <div class="modal-feedback__label-wrap">
-                <label for="personal-data-check">Нажимая эту кнопку я даю согласие на обработку персональных данных</label>
-                <label for="site-politics-agree">и соглашаюсь с условиями и политикой обработки персональных данных</label>
-              </div>
+
+            <div class="modal-feedback__form-wrap">
+              <form class="modal-feedback__form" action="">
+               <span class="cross"></span>
+               <h2 class="modal-feedback__header">Обратный звонок</h2>
+               <p class="modal-feedback__intro-text">Отправьте свое имя и телефон и наш сотрудник перезвонит вам в течении рабочего дня</p>
+               <input class="modal-feedback__name-input" type="text" placeholder="Ваше имя" name="name">
+               <input class="modal-feedback__tele-input" type="text" placeholder="Ваш телефон" name="phone-number">
+               <div class="modal-feedback__user-agreement-wrap">
+                 <div class="modal-feedback__checkbox-wrap">
+                   <input class="modal-feedback__checkbox" type="checkbox" id="personal-data-check">
+                   <input class="modal-feedback__checkbox" type="checkbox" id="site-politics-agree">
+                 </div>
+                 <div class="modal-feedback__label-wrap">
+                   <label for="personal-data-check">Нажимая эту кнопку я даю согласие на обработку персональных данных</label>
+                   <label for="site-politics-agree">и соглашаюсь с условиями и политикой обработки персональных данных</label>
+                 </div>
+               </div>
+               <input class="modal-feedback__submit-btn btn" type="submit" value="Обратный звонок">
+               </form>
             </div>
-            <button class="btn">Обратный звонок</button>
-          </form>
         </section>
         @show
   </body>

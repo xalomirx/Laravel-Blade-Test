@@ -9,18 +9,15 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
 }
 
-.modal-feedback__form {
+.modal-feedback__form-wrap {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  vertical-align: middle;
   padding-top: 95px;
   padding-bottom: 45px;
   padding-left: 60px;
   padding-right: 60px;
 }
 
-.modal-feedback__form::before {
+.modal-feedback__form-wrap::before {
   position: absolute;
   left: 50%;
   top: 35px;
@@ -30,6 +27,10 @@
   height: 55px;
   background-image: url("../images/phone-in-circle.svg");
   background-size: 55px 55px;
+}
+
+.modal-feedback__form {
+  text-align: center;
 }
 
 .cross {
@@ -78,6 +79,7 @@
 
 .modal-feedback__name-input,
 .modal-feedback__tele-input {
+  width: 100%;
   margin-bottom: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -104,8 +106,8 @@
   min-height: 40px;
 }
 
-.btn {
-
+.modal-feedback__label-wrap {
+  text-align: left;
 }
 
 
